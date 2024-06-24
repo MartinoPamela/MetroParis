@@ -2,6 +2,7 @@ import mysql.connector
 from mysql.connector import errorcode
 import pathlib
 
+
 class DBConnect:
     """Class that is used to create and manage a pool of connections to the database.
     It implements a class method that works as a factory for lending the connections from the pool"""

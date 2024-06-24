@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+
 @dataclass
 class Fermata:
     _id_fermata: int

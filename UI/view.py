@@ -37,11 +37,16 @@ class View(ft.UserControl):
                       alignment=ft.MainAxisAlignment.CENTER)
 
         # Row with controls
-        self._btnCrea = ft.ElevatedButton(text="Crea Grafo", on_click=self._controller.handleCreaGrafo)
+        # self._btnCrea = ft.ElevatedButton(text="Crea Grafo", on_click=self._controller.handleCreaGrafo)
+        self._btnCrea = ft.ElevatedButton(text="Crea Grafo", on_click=self._controller.handleCreaGrafoPesato)
         self._ddStazPartenza = ft.Dropdown(label="Stazione di Partenza")
         self._ddStazArrivo = ft.Dropdown(label="Stazione di Arrivo")
-        self._btnCalcola = ft.ElevatedButton(text="Calcola Raggiungibili", on_click=self._controller.handleCercaRaggiungibili)
-
+        self._btnCalcola = ft.ElevatedButton(text="Calcola Raggiungibili",
+                                             on_click=self._controller.handleCercaRaggiungibili,
+                                             disabled=True)  # disabled true non posso cliccarlo, è disabilitato
+        self._btnCalcolaPercorso = ft.ElevatedButton(text="Calcola percorso",
+                                                     on_click=self._controller.handlePercorso,
+                                                     disabled=True)  # mi trova il cammino minimo
 
         #Load elements in DD
         self._controller.loadFermate(self._ddStazPartenza)
@@ -52,6 +57,7 @@ class View(ft.UserControl):
                        self._ddStazPartenza,
                        self._ddStazArrivo,
                        self._btnCalcola,
+                       self._btnCalcolaPercorso
                        ], alignment=ft.MainAxisAlignment.CENTER, spacing=30)
 
         # Row with listview
