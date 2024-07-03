@@ -57,7 +57,7 @@ class DAO():
             # tabella vuota) o che questo row sia una o più righe perché magari ci sono più archi tra quei due nodi.
             # In una prima fase voglio solo sapere se c'è un arco tra A e B, non quanti sono, per
             # questo metto tutto in result e poi mi vado a vedere la lunghezza di questo result
-
+            # c
 
         cursor.close()
         conn.close()
