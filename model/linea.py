@@ -11,3 +11,5 @@ class Linea:
 
     # non scrivo un to string perché probabilmente non dovrò stampare l'oggetto Linea,
     # non scrivo un hash function perché probabilmente non saranno nodi del nostro grafo
+
+    # c

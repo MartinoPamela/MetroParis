@@ -29,3 +29,5 @@ class Fermata:
 
     def __str__(self):
         return f"{self._nome}"
+
+    # c

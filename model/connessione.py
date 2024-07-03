@@ -30,4 +30,5 @@ class Connessione:
     def __str__(self):
         return str(self._id_connessione)
 
+    # c
 

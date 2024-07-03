@@ -138,3 +138,5 @@ class Model:
         velocita = linea.velocita
         tempo = distanza/velocita * 60  # converto in minuti dato che ce l'ho in ore
         return tempo
+
+    # c

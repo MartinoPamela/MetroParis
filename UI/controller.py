@@ -114,3 +114,5 @@ class Controller:  # attraverso il controller parliamo con l'interfaccia
             self._fermataArrivo = None
         else:
             self._fermataArrivo = e.control.data
+
+    # c
