@@ -1,6 +1,6 @@
 from database.DAO import DAO
 import networkx as nx
-import geopy.distance
+import geopy.distance  # in basso c'è un metodo per calcolare le distanze fra coordinate
 
 
 class Model:
